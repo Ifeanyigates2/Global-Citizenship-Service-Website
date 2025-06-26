@@ -1,0 +1,262 @@
+/* =================== CSS VARIABLES =================== */
+:root {
+    --primary-blue: #1769aa;
+    --primary-blue-dark: #0d3c61;
+    --accent-blue: #2196f3;
+    --accent-blue-light: #e3f2fd;
+    --white: #fff;
+    --gray-bg: #f3f3f3;
+    --footer-bg: #16213e;
+    --footer-gradient: linear-gradient(135deg, #1769aa 0%, #0d3c61 100%);
+    --shadow: 0 2px 8px rgba(23, 105, 170, 0.07);
+    --shadow-hover: 0 4px 16px rgba(23, 105, 170, 0.13);
+    --border-radius: 12px;
+    --transition: 0.2s cubic-bezier(.4,0,.2,1);
+    --font-main: 'Poppins', Arial, sans-serif;
+}
+
+/* =================== BASE STYLES =================== */
+html, body {
+    font-family: var(--font-main);
+    background: var(--white);
+    color: #222;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-main);
+    font-weight: 700;
+    color: var(--primary-blue-dark);
+}
+
+a {
+    color: var(--primary-blue);
+    text-decoration: none;
+    transition: color var(--transition);
+}
+a:hover, a:focus {
+    color: var(--accent-blue);
+    text-decoration: underline;
+}
+
+/* =================== NAVBAR =================== */
+.main-navbar {
+    background: var(--white);
+    box-shadow: 0 2px 8px rgba(23, 105, 170, 0.05);
+    transition: box-shadow var(--transition);
+    z-index: 1000;
+}
+.main-navbar .navbar-brand span {
+    color: var(--primary-blue);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.main-navbar .nav-link {
+    font-weight: 500;
+    color: var(--primary-blue-dark);
+    margin-left: 1rem;
+    transition: color var(--transition);
+}
+.main-navbar .nav-link:hover, .main-navbar .nav-link:focus {
+    color: var(--accent-blue);
+}
+.main-navbar .dropdown-menu {
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+/* =================== BANNER/CAROUSEL =================== */
+.banner {
+    position: relative;
+    min-height: 420px;
+    background: var(--accent-blue-light);
+    overflow: hidden;
+}
+.banner-img {
+    min-height: 420px;
+    object-fit: cover;
+    width: 100%;
+    filter: brightness(0.85);
+}
+.banner-text-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, rgba(23,105,170,0.5) 0%, rgba(33,150,243,0.3) 100%);
+}
+.banner-text {
+    color: var(--white);
+    text-align: center;
+    background: rgba(23,105,170,0.4);
+    padding: 32px 24px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    max-width: 600px;
+}
+.banner-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--white);
+    text-shadow: 0 2px 8px rgba(23,105,170,0.15);
+}
+.banner-know-more {
+    margin-top: 10px;
+}
+
+/* Wavy SVG Divider */
+.custom-shape-divider-bottom-1717 {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    z-index: 2;
+}
+.custom-shape-divider-bottom-1717 svg {
+    display: block;
+    width: 100%;
+    height: 60px;
+}
+.custom-shape-divider-bottom-1717 .shape-fill {
+    fill: var(--primary-blue);
+}
+
+/* =================== CARDS =================== */
+.card {
+    box-shadow: var(--shadow);
+    border: none;
+    border-radius: var(--border-radius);
+    transition: box-shadow var(--transition), transform var(--transition);
+    background: var(--white);
+}
+.card:hover, .card:focus-within {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-6px) scale(1.02);
+}
+.card-img-top {
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    max-height: 220px;
+    object-fit: cover;
+}
+.service-card .card-body h3,
+.relocate-card .card-body h3 {
+    color: var(--primary-blue);
+}
+.flags img {
+    width: 28px;
+    height: 20px;
+    object-fit: cover;
+    border-radius: 3px;
+    margin-right: 8px;
+}
+.flags li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+/* =================== BUTTONS =================== */
+.btn-primary {
+    background: var(--primary-blue);
+    border: none;
+    border-radius: 50px;
+    padding: 0.6rem 2rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 8px rgba(23,105,170,0.10);
+    transition: background var(--transition), box-shadow var(--transition), transform var(--transition);
+}
+.btn-primary:hover, .btn-primary:focus {
+    background: var(--accent-blue);
+    box-shadow: 0 4px 16px rgba(33,150,243,0.13);
+    transform: translateY(-2px) scale(1.03);
+}
+.btn-link {
+    color: var(--primary-blue);
+    font-weight: 500;
+    text-decoration: underline;
+    border-radius: 50px;
+    transition: color var(--transition), background var(--transition);
+}
+.btn-link:hover, .btn-link:focus {
+    color: var(--accent-blue);
+    background: var(--accent-blue-light);
+}
+
+/* =================== FOOTER =================== */
+.footer {
+    background: var(--footer-gradient);
+    color: var(--white);
+}
+.footer h5 {
+    font-size: 1.2rem;
+    margin-bottom: 18px;
+    color: var(--accent-blue);
+}
+.footer a.text-white:hover {
+    text-decoration: underline;
+    color: var(--accent-blue);
+}
+.footer ul.list-inline i {
+    font-size: 1.3rem;
+    transition: color var(--transition), transform var(--transition);
+}
+.footer ul.list-inline a:hover i {
+    color: var(--accent-blue);
+    transform: scale(1.2);
+}
+
+/* =================== AOS ANIMATION =================== */
+[data-aos] {
+    opacity: 0;
+    transition-property: opacity, transform;
+}
+[data-aos].aos-animate {
+    opacity: 1;
+}
+
+/* =================== UTILITIES =================== */
+.tittle {
+    color: var(--primary-blue-dark);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.bg-light {
+    background: var(--gray-bg) !important;
+}
+
+/* =================== RESPONSIVE =================== */
+@media (max-width: 991px) {
+    .banner-heading {
+        font-size: 1.5rem;
+    }
+    .card-img-top {
+        max-height: 160px;
+    }
+    .main-navbar .nav-link {
+        margin-left: 0.5rem;
+    }
+}
+@media (max-width: 767px) {
+    .banner-text {
+        padding: 18px 8px;
+    }
+    .footer-top {
+        flex-direction: column;
+    }
+}
+@media (max-width: 575px) {
+    .banner-text {
+        padding: 12px 2px;
+    }
+    .banner-heading {
+        font-size: 1.1rem;
+    }
+} 
