@@ -10,7 +10,8 @@
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <link rel="apple-touch-icon" type="image/x-icon" href="img/favicon.png">
     <!-- Google Fonts: Poppins -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;
+    700&display=swap" rel="stylesheet">
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -34,20 +35,18 @@
 </head>
 <body>
     <!-- =================== NAVIGATION =================== -->
-    <nav class="navbar navbar-expand-lg navbar-light main-navbar sticky-top shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-light main-navbar sticky-top shadow-sm" style="background: linear-gradient(90deg, #1769aa 0%, #2196f3 100%);">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <!-- Logo image -->
-                <img src="img/logo.png" alt="Global Citizenship Services Logo" class="img-fluid me-2" style="max-height: 60px;">
-                <span class="fw-bold">GCS</span>
+            <a class="navbar-brand d-flex align-items-center" href="index.html" style="gap: 0.5rem;">
+                <img src="img/logo.png" alt="Global Citizenship Services Logo" class="img-fluid me-2" style="max-height: 60px; border-radius: 12px; box-shadow: 0 2px 8px rgba(23,105,170,0.10);">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto align-items-lg-center" style="gap: 0.5rem;">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="relocateUSA" data-bs-toggle="dropdown" aria-expanded="false">Relocate to the USA <i class="fas fa-caret-down"></i></a>
+                        <a class="nav-link rounded-pill px-3 py-2 text-white" href="#" id="relocateUSA" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: 500;">Relocate to the USA <i class="fas fa-caret-down ms-1"></i></a>
                         <ul class="dropdown-menu" aria-labelledby="relocateUSA">
                             <li><a class="dropdown-item" href="eb5-africa.html">EB5 Africa</a></li>
                             <li><a class="dropdown-item" href="eb5-india.html">EB5 India</a></li>
@@ -55,64 +54,82 @@
                             <li><a class="dropdown-item" href="eb5-china.html">EB5 China</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="grenada.html">CBI Programmes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="corporate-solutions.html">Corporate Solutions</a></li>
-                    <li class="nav-item"><a class="nav-link" href="franchises.html">Business Opportunities</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contactus.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link rounded-pill px-3 py-2 text-white" href="grenada.html" style="font-weight: 500;">CBI Programmes</a></li>
+                    <li class="nav-item"><a class="nav-link rounded-pill px-3 py-2 text-white" href="franchises.html" style="font-weight: 500;">Business Opportunities</a></li>
+                    <li class="nav-item"><a class="nav-link rounded-pill px-3 py-2 text-white" href="about.html" style="font-weight: 500;">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link rounded-pill px-3 py-2 text-white" href="contactus.html" style="font-weight: 500;">Contact Us</a></li>
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <a href="contactus.html" class="btn btn-light btn-lg px-4 py-2 fw-bold shadow-sm" style="border-radius: 50px; color: #1769aa;">Get Started</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- =================== BANNER/CAROUSEL =================== -->
     <header class="banner position-relative">
-        <div class="owl-carousel owl-theme">
-            <!-- Banner images: Place your images in img/ and update src as needed -->
-            <div class="item position-relative">
-                <img src="img/banner11.jpg" class="img-fluid w-100 banner-img" alt="Banner 1">
-                <div class="banner-text-wrapper d-flex align-items-center justify-content-center">
-                    <div class="banner-text" data-aos="fade-up">
-                        <h1 class="banner-heading">Leading Global Citizenship Services by GCS</h1>
-                        <a href="about.html" class="btn btn-primary banner-know-more">Know More</a>
+        <div class="banner-floating-shape"></div>
+        <div id="mainBannerCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2000">
+            <div class="carousel-inner">
+                <!-- Slide 1: Cityscape image -->
+                <div class="carousel-item active">
+                    <div class="banner-img-slide" style="background: linear-gradient(rgba(34,41,96,0.28), rgba(34,41,96,0.28)), url('img/cityscape.jpg') center/cover no-repeat; min-height: 60vh; display: flex; align-items: center; justify-content: center;">
+                        <div class="banner-text-wrapper d-flex align-items-center justify-content-center w-100">
+                            <div class="banner-text text-center text-white" data-aos="fade-up">
+                                <h1 class="banner-heading">Leading Global Citizenship Services by GCS</h1>
+                                <a href="#services" class="btn btn-primary mt-4 banner-cta">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="banner-img-slide" style="background: linear-gradient(rgba(34,41,96,0.22), rgba(34,41,96,0.22)), url('img/banner2.jpg') center/cover no-repeat; min-height: 60vh; display: flex; align-items: center; justify-content: center;">
+                        <div class="banner-text-wrapper d-flex align-items-center justify-content-center w-100">
+                            <div class="banner-text text-center text-white" data-aos="fade-up">
+                                <h2 class="banner-heading">GCS has expertise in a wide range of global citizenship or residency by investment programs</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <div class="banner-img-slide" style="background: linear-gradient(rgba(34,41,96,0.22), rgba(34,41,96,0.22)), url('img/banner3.jpg') center/cover no-repeat; min-height: 60vh; display: flex; align-items: center; justify-content: center;">
+                        <div class="banner-text-wrapper d-flex align-items-center justify-content-center w-100">
+                            <div class="banner-text text-center text-white" data-aos="fade-up">
+                                <h2 class="banner-heading">GCS can help you identify business opportunities to suit your interests and budget</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 4 -->
+                <div class="carousel-item">
+                    <div class="banner-img-slide" style="background: linear-gradient(rgba(34,41,96,0.22), rgba(34,41,96,0.22)), url('img/banner4.jpg') center/cover no-repeat; min-height: 60vh; display: flex; align-items: center; justify-content: center;">
+                        <div class="banner-text-wrapper d-flex align-items-center justify-content-center w-100">
+                            <div class="banner-text text-center text-white" data-aos="fade-up">
+                                <h2 class="banner-heading">GCS has formed partnerships with the most successful stakeholders in the EB-5 Program</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 5 -->
+                <div class="carousel-item">
+                    <div class="banner-img-slide" style="background: linear-gradient(rgba(34,41,96,0.22), rgba(34,41,96,0.22)), url('img/banner5.jpg') center/cover no-repeat; min-height: 60vh; display: flex; align-items: center; justify-content: center;">
+                        <div class="banner-text-wrapper d-flex align-items-center justify-content-center w-100">
+                            <div class="banner-text text-center text-white" data-aos="fade-up">
+                                <h2 class="banner-heading">By offering ongoing corporate services, we stay with our clients long after they relocate</h2>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="item position-relative">
-                <img src="img/banner22.jpg" class="img-fluid w-100 banner-img" alt="Banner 2">
-                <div class="banner-text-wrapper d-flex align-items-center justify-content-center">
-                    <div class="banner-text" data-aos="fade-up">
-                        <h2 class="banner-heading">GCS has expertise in a wide range of global citizenship or residency by investment programs</h2>
-                        <a href="grenada.html" class="btn btn-primary banner-know-more">Know More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="item position-relative">
-                <img src="img/banner33.jpg" class="img-fluid w-100 banner-img" alt="Banner 3">
-                <div class="banner-text-wrapper d-flex align-items-center justify-content-center">
-                    <div class="banner-text" data-aos="fade-up">
-                        <h2 class="banner-heading">GCS can help you identify business opportunities to suit your interests and budget</h2>
-                        <a href="franchises.html" class="btn btn-primary banner-know-more">Know More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="item position-relative">
-                <img src="img/banner44.jpg" class="img-fluid w-100 banner-img" alt="Banner 4">
-                <div class="banner-text-wrapper d-flex align-items-center justify-content-center">
-                    <div class="banner-text" data-aos="fade-up">
-                        <h2 class="banner-heading">GCS has formed partnerships with the most successful stakeholders in the EB-5 Program</h2>
-                        <a href="eb5-africa.html" class="btn btn-primary banner-know-more">Know More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="item position-relative">
-                <img src="img/banner55.jpg" class="img-fluid w-100 banner-img" alt="Banner 5">
-                <div class="banner-text-wrapper d-flex align-items-center justify-content-center">
-                    <div class="banner-text" data-aos="fade-up">
-                        <h2 class="banner-heading">By offering ongoing corporate services, we stay with our clients long after they relocate</h2>
-                        <a href="corporate-solutions.html" class="btn btn-primary banner-know-more">Know More</a>
-                    </div>
-                </div>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#mainBannerCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mainBannerCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
         <!-- Wavy SVG Divider -->
         <div class="custom-shape-divider-bottom-1717">
@@ -123,7 +140,8 @@
         <!-- =================== OUR SERVICES =================== -->
         <section class="about py-5" id="services">
             <div class="container">
-                <h3 class="tittle text-center mb-5" data-aos="fade-up">Our Services</h3>
+                <h3 class="tittle text-center mb-2 position-relative section-title-underline" data-aos="fade-up">Our Services</h3>
+                <div class="section-underline mx-auto mb-5"></div>
                 <div class="row feature-grids text-center">
                     <!-- Service Card 1 -->
                     <div class="col-lg-4 mb-4" data-aos="fade-up">
@@ -136,7 +154,6 @@
                                     <li><img src="img/cbi_2.png" class="me-2"><a href="#">Malta</a></li>
                                     <li><img src="img/cbi_3.png" class="me-2"><a href="#">UK</a></li>
                                 </ul>
-                                <a href="#" class="btn btn-link">Take a look</a>
                             </div>
                         </div>
                     </div>
@@ -151,7 +168,6 @@
                                     <li><img src="img/cs_2.png" class="me-2"><a href="corporate-solutions.html">Corporate Solutions</a></li>
                                     <li><img src="img/cs_3.png" class="me-2"><a href="#">Tax Advice</a></li>
                                 </ul>
-                                <a href="#" class="btn btn-link">Take a look</a>
                             </div>
                         </div>
                     </div>
@@ -167,7 +183,6 @@
                                     <li><img src="img/bo_3.png" class="me-2"><a href="#">Consultancy</a></li>
                                     <li><img src="img/bo_4.png" class="me-2"><a href="#">Business Acquisitions</a></li>
                                 </ul>
-                                <a href="#" class="btn btn-link">Take a look</a>
                             </div>
                         </div>
                     </div>
@@ -177,8 +192,9 @@
         <!-- =================== RELOCATE TO THE USA =================== -->
         <section class="py-5 bg-light" id="relocate-usa">
             <div class="container">
+                <h3 class="tittle text-center mb-2 position-relative section-title-underline" data-aos="fade-up">Relocate to the USA</h3>
+                <div class="section-underline mx-auto mb-4"></div>
                 <div class="fetured-info">
-                    <h3 class="tittle text-center mb-4" data-aos="fade-up">Relocate to the USA</h3>
                     <p class="text-center" data-aos="fade-up">Global Citizenship Services is able to support every stage of your relocation to the United States. We pool our extensive immigration and corporate experience to help you build the strongest possible case for the US authorities, and stay by your side as you begin navigating the complex world of paying US taxes and setting up a business. Contact us to set up a free consultation.</p>
                     <div class="row feature-grids text-center mt-5">
                         <!-- EB5 Card -->
@@ -229,7 +245,7 @@
             </div>
         </section>
         <!-- =================== ABOUT US =================== -->
-        <section class="about py-5" id="about">
+        <section class="about py-5 about-bg" id="about">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 mb-4" data-aos="fade-right">
@@ -262,7 +278,6 @@
                         <li><a href="about.html" class="text-white">About Us</a></li>
                         <li><a href="contactus.html" class="text-white">Contact Us</a></li>
                         <li><a href="grenada.html" class="text-white">CBI Programmes</a></li>
-                        <li><a href="corporate-solutions.html" class="text-white">Corporate Solutions</a></li>
                         <li><a href="franchises.html" class="text-white">Business Opportunities</a></li>
                     </ul>
                 </div>
