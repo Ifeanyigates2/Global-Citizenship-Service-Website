@@ -10,14 +10,11 @@
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <link rel="apple-touch-icon" type="image/x-icon" href="img/favicon.png">
     <!-- Google Fonts: Poppins -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;
-    700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
-    <!-- Owl Carousel -->
-    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css" type="text/css" media="all" />
     <!-- AOS (Animate On Scroll) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
     <!-- Custom CSS -->
@@ -35,18 +32,20 @@
 </head>
 <body>
     <!-- =================== NAVIGATION =================== -->
-    <nav class="navbar navbar-expand-lg navbar-light main-navbar sticky-top shadow-sm" style="background: linear-gradient(90deg, #1769aa 0%, #2196f3 100%);">
+    <nav class="navbar navbar-expand-lg navbar-light main-navbar sticky-top shadow-sm">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="index.html" style="gap: 0.5rem;">
-                <img src="img/logo.png" alt="Global Citizenship Services Logo" class="img-fluid me-2" style="max-height: 60px; border-radius: 12px; box-shadow: 0 2px 8px rgba(23,105,170,0.10);">
+                <div class="logo-container" style="background: white; padding: 8px; border-radius: 12px; box-shadow: 0 2px 8px rgba(23,105,170,0.15);">
+                    <img src="img/logo.png" alt="Global Citizenship Services Logo" class="img-fluid" style="max-height: 50px;">
+                </div>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto align-items-lg-center" style="gap: 0.5rem;">
+                <ul class="navbar-nav ms-auto align-items-lg-center" style="gap: 0.3rem;">
                     <li class="nav-item dropdown">
-                        <a class="nav-link rounded-pill px-3 py-2 text-white" href="#" id="relocateUSA" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: 500;">Relocate to the USA <i class="fas fa-caret-down ms-1"></i></a>
+                        <a class="nav-link rounded-pill px-2 py-1 text-dark" href="#" id="relocateUSA" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: 500; font-size: 0.9rem;">Relocate to the USA <i class="fas fa-caret-down ms-1"></i></a>
                         <ul class="dropdown-menu" aria-labelledby="relocateUSA">
                             <li><a class="dropdown-item" href="eb5-africa.html">EB5 Africa</a></li>
                             <li><a class="dropdown-item" href="eb5-india.html">EB5 India</a></li>
@@ -54,272 +53,343 @@
                             <li><a class="dropdown-item" href="eb5-china.html">EB5 China</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link rounded-pill px-3 py-2 text-white" href="grenada.html" style="font-weight: 500;">CBI Programmes</a></li>
-                    <li class="nav-item"><a class="nav-link rounded-pill px-3 py-2 text-white" href="franchises.html" style="font-weight: 500;">Business Opportunities</a></li>
-                    <li class="nav-item"><a class="nav-link rounded-pill px-3 py-2 text-white" href="about.html" style="font-weight: 500;">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link rounded-pill px-3 py-2 text-white" href="contactus.html" style="font-weight: 500;">Contact Us</a></li>
-                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
-                        <a href="contactus.html" class="btn btn-light btn-lg px-4 py-2 fw-bold shadow-sm" style="border-radius: 50px; color: #1769aa;">Get Started</a>
+                    <li class="nav-item"><a class="nav-link rounded-pill px-2 py-1 text-dark" href="grenada.html" style="font-weight: 500; font-size: 0.9rem;">CBI Programmes</a></li>
+                    <li class="nav-item"><a class="nav-link rounded-pill px-2 py-1 text-dark" href="franchises.html" style="font-weight: 500; font-size: 0.9rem;">Business Opportunities</a></li>
+                    <li class="nav-item"><a class="nav-link rounded-pill px-2 py-1 text-dark" href="about.html" style="font-weight: 500; font-size: 0.9rem;">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link rounded-pill px-2 py-1 text-dark" href="contactus.html" style="font-weight: 500; font-size: 0.9rem;">Contact Us</a></li>
+                    <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                        <a href="contactus.html" class="btn btn-primary btn-sm px-3 py-2 fw-bold shadow-sm" style="border-radius: 50px;">Get Started</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!-- =================== BANNER/CAROUSEL =================== -->
-    <header class="banner position-relative">
-        <div class="banner-floating-shape"></div>
-        <div id="mainBannerCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2000">
-            <div class="carousel-inner">
-                <!-- Slide 1: Cityscape image -->
-                <div class="carousel-item active">
-                    <div class="banner-img-slide" style="background: linear-gradient(rgba(34,41,96,0.28), rgba(34,41,96,0.28)), url('img/cityscape.jpg') center/cover no-repeat; min-height: 60vh; display: flex; align-items: center; justify-content: center;">
-                        <div class="banner-text-wrapper d-flex align-items-center justify-content-center w-100">
-                            <div class="banner-text text-center text-white" data-aos="fade-up">
-                                <h1 class="banner-heading">Leading Global Citizenship Services by GCS</h1>
-                                <a href="#services" class="btn btn-primary mt-4 banner-cta">Get Started</a>
-                            </div>
-                        </div>
+
+    <!-- =================== HERO SECTION =================== -->
+    <section class="hero-section position-relative">
+        <div class="hero-bg" style="background: linear-gradient(rgba(34,41,96,0.15), rgba(34,41,96,0.15)), url('img/cityscape.jpg') center/cover no-repeat; min-height: 100vh;"></div>
+        <div class="hero-floating-shape"></div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h1 class="hero-heading text-white mb-4">
+                        Your Gateway to Global Citizenship
+                    </h1>
+                    <p class="hero-subtitle text-white mb-4">
+                        Professional assistance with dual nationality, residency programs, and citizenship by investment opportunities worldwide. Leading Global Citizenship Services by GCS.
+                    </p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="#services" class="btn btn-warning btn-lg hero-cta">
+                            <i class="fas fa-file-alt me-2"></i>Start Application
+                        </a>
+                        <a href="about.html" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-info-circle me-2"></i>Learn More
+                        </a>
                     </div>
                 </div>
-                <!-- Slide 2 -->
-                <div class="carousel-item">
-                    <div class="banner-img-slide" style="background: linear-gradient(rgba(34,41,96,0.22), rgba(34,41,96,0.22)), url('img/banner2.jpg') center/cover no-repeat; min-height: 60vh; display: flex; align-items: center; justify-content: center;">
-                        <div class="banner-text-wrapper d-flex align-items-center justify-content-center w-100">
-                            <div class="banner-text text-center text-white" data-aos="fade-up">
-                                <h2 class="banner-heading">GCS has expertise in a wide range of global citizenship or residency by investment programs</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Slide 3 -->
-                <div class="carousel-item">
-                    <div class="banner-img-slide" style="background: linear-gradient(rgba(34,41,96,0.22), rgba(34,41,96,0.22)), url('img/banner3.jpg') center/cover no-repeat; min-height: 60vh; display: flex; align-items: center; justify-content: center;">
-                        <div class="banner-text-wrapper d-flex align-items-center justify-content-center w-100">
-                            <div class="banner-text text-center text-white" data-aos="fade-up">
-                                <h2 class="banner-heading">GCS can help you identify business opportunities to suit your interests and budget</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Slide 4 -->
-                <div class="carousel-item">
-                    <div class="banner-img-slide" style="background: linear-gradient(rgba(34,41,96,0.22), rgba(34,41,96,0.22)), url('img/banner4.jpg') center/cover no-repeat; min-height: 60vh; display: flex; align-items: center; justify-content: center;">
-                        <div class="banner-text-wrapper d-flex align-items-center justify-content-center w-100">
-                            <div class="banner-text text-center text-white" data-aos="fade-up">
-                                <h2 class="banner-heading">GCS has formed partnerships with the most successful stakeholders in the EB-5 Program</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Slide 5 -->
-                <div class="carousel-item">
-                    <div class="banner-img-slide" style="background: linear-gradient(rgba(34,41,96,0.22), rgba(34,41,96,0.22)), url('img/banner5.jpg') center/cover no-repeat; min-height: 60vh; display: flex; align-items: center; justify-content: center;">
-                        <div class="banner-text-wrapper d-flex align-items-center justify-content-center w-100">
-                            <div class="banner-text text-center text-white" data-aos="fade-up">
-                                <h2 class="banner-heading">By offering ongoing corporate services, we stay with our clients long after they relocate</h2>
-                            </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="hero-image text-center">
+                        <div class="hero-globe-container">
+                            <i class="fas fa-globe-americas hero-globe"></i>
                         </div>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#mainBannerCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#mainBannerCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
         <!-- Wavy SVG Divider -->
         <div class="custom-shape-divider-bottom-1717">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M985.66,83.29c-83.81,22.75-167.63,27.29-251.44,13.63C653.73,82.4,569.91,49.47,486.09,49.47c-83.82,0-167.63,32.93-251.44,47.45C150.84,110.58,67,106,0,92.36V120H1200V92.36C1133,106,1049.15,110.58,985.66,83.29Z" opacity=".25" class="shape-fill"></path><path d="M985.66,63.29c-83.81,22.75-167.63,27.29-251.44,13.63C653.73,62.4,569.91,29.47,486.09,29.47c-83.82,0-167.63,32.93-251.44,47.45C150.84,90.58,67,86,0,72.36V120H1200V72.36C1133,86,1049.15,90.58,985.66,63.29Z" opacity=".5" class="shape-fill"></path><path d="M985.66,43.29c-83.81,22.75-167.63,27.29-251.44,13.63C653.73,42.4,569.91,9.47,486.09,9.47c-83.82,0-167.63,32.93-251.44,47.45C150.84,70.58,67,66,0,52.36V120H1200V52.36C1133,66,1049.15,70.58,985.66,43.29Z" class="shape-fill"></path></svg>
         </div>
-    </header>
-    <main>
-        <!-- =================== OUR SERVICES =================== -->
-        <section class="about py-5" id="services">
-            <div class="container">
-                <h3 class="tittle text-center mb-2 position-relative section-title-underline" data-aos="fade-up">Our Services</h3>
-                <div class="section-underline mx-auto mb-5"></div>
-                <div class="row feature-grids text-center">
-                    <!-- Service Card 1 -->
+    </section>
+
+    <!-- =================== FEATURES SECTION =================== -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="display-5 fw-bold section-title-underline" data-aos="fade-up">Why Choose Our Services?</h2>
+                    <div class="section-underline mx-auto mb-3"></div>
+                    <p class="lead text-muted" data-aos="fade-up">Professional expertise in global citizenship solutions</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="feature-card text-center p-4 h-100">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Trusted Expertise</h4>
+                        <p class="text-muted">Over 15 years of experience in international citizenship and residency matters.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card text-center p-4 h-100">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4>Fast Processing</h4>
+                        <p class="text-muted">Streamlined processes to minimize waiting times and maximize efficiency.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card text-center p-4 h-100">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Personal Support</h4>
+                        <p class="text-muted">Dedicated case managers to guide you through every step of the process.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================== OUR SERVICES =================== -->
+    <section class="about py-5" id="services">
+        <div class="container">
+            <h3 class="tittle text-center mb-2 position-relative section-title-underline" data-aos="fade-up">Our Services</h3>
+            <div class="section-underline mx-auto mb-5"></div>
+            <div class="row feature-grids text-center">
+                <!-- Service Card 1 -->
+                <div class="col-lg-4 mb-4" data-aos="fade-up">
+                    <div class="card service-card h-100">
+                        <div class="service-icon-top">
+                            <i class="fas fa-passport"></i>
+                        </div>
+                        <img src="img/cbi.png" class="card-img-top" alt="CBI Programmes" />
+                        <div class="card-body">
+                            <h3 class="my-4">CBI Programmes</h3>
+                            <ul class="list-unstyled flags">
+                                <li><img src="img/cbi_1.png" class="me-2"><a href="grenada.html">Grenada</a></li>
+                                <li><img src="img/cbi_2.png" class="me-2"><a href="#">Malta</a></li>
+                                <li><img src="img/cbi_3.png" class="me-2"><a href="#">UK</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service Card 2 -->
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card service-card h-100">
+                        <div class="service-icon-top">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <img src="img/services_2.jpg" class="card-img-top" alt="Corporate Solutions" />
+                        <div class="card-body">
+                            <h3 class="my-4">Corporate Solutions</h3>
+                            <ul class="list-unstyled flags">
+                                <li><img src="img/cs_1.png" class="me-2"><a href="#">Business Registration</a></li>
+                                <li><img src="img/cs_2.png" class="me-2"><a href="corporate-solutions.html">Corporate Solutions</a></li>
+                                <li><img src="img/cs_3.png" class="me-2"><a href="#">Tax Advice</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service Card 3 -->
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card service-card h-100">
+                        <div class="service-icon-top">
+                            <i class="fas fa-coins"></i>
+                        </div>
+                        <img src="img/services_3.jpg" class="card-img-top" alt="Business Opportunities" />
+                        <div class="card-body">
+                            <h3 class="my-4">Business Opportunities</h3>
+                            <ul class="list-unstyled flags">
+                                <li><img src="img/bo_1.png" class="me-2"><a href="franchises.html">Franchise</a></li>
+                                <li><img src="img/bo_2.png" class="me-2"><a href="#">Property</a></li>
+                                <li><img src="img/bo_3.png" class="me-2"><a href="#">Consultancy</a></li>
+                                <li><img src="img/bo_4.png" class="me-2"><a href="#">Business Acquisitions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================== RELOCATE TO THE USA =================== -->
+    <section class="py-5 bg-light" id="relocate-usa">
+        <div class="container">
+            <h3 class="tittle text-center mb-2 position-relative section-title-underline" data-aos="fade-up">Relocate to the USA</h3>
+            <div class="section-underline mx-auto mb-4"></div>
+            <div class="fetured-info">
+                <p class="text-center" data-aos="fade-up">Global Citizenship Services is able to support every stage of your relocation to the United States. We pool our extensive immigration and corporate experience to help you build the strongest possible case for the US authorities, and stay by your side as you begin navigating the complex world of paying US taxes and setting up a business. Contact us to set up a free consultation.</p>
+                <div class="row feature-grids text-center mt-5">
+                    <!-- EB5 Card -->
                     <div class="col-lg-4 mb-4" data-aos="fade-up">
-                        <div class="card service-card h-100">
-                            <img src="img/cbi.png" class="card-img-top" alt="CBI Programmes" />
+                        <div class="card relocate-card h-100">
+                            <img src="img/usa_c1.jpg" class="card-img-top" alt="EB5" />
                             <div class="card-body">
-                                <h3 class="my-4">CBI Programmes</h3>
+                                <h3 class="my-4">EB5</h3>
                                 <ul class="list-unstyled flags">
-                                    <li><img src="img/cbi_1.png" class="me-2"><a href="grenada.html">Grenada</a></li>
-                                    <li><img src="img/cbi_2.png" class="me-2"><a href="#">Malta</a></li>
-                                    <li><img src="img/cbi_3.png" class="me-2"><a href="#">UK</a></li>
+                                    <li><img src="img/flag_1.jpg" class="me-2"><a href="eb5-africa.html">EB5 Africa</a></li>
+                                    <li><img src="img/flag_2.jpg" class="me-2"><a href="eb5-india.html">EB5 India</a></li>
+                                    <li><img src="img/flag_3.jpg" class="me-2"><a href="eb5-russia.html">EB5 Russia</a></li>
+                                    <li><img src="img/flag_4.jpg" class="me-2"><a href="eb5-china.html">EB5 China</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <!-- Service Card 2 -->
+                    <!-- L1 Card -->
                     <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                        <div class="card service-card h-100">
-                            <img src="img/services_2.jpg" class="card-img-top" alt="Corporate Solutions" />
+                        <div class="card relocate-card h-100">
+                            <img src="img/usa_c2.jpg" class="card-img-top" alt="L1" />
                             <div class="card-body">
-                                <h3 class="my-4">Corporate Solutions</h3>
+                                <h3 class="my-4">L1</h3>
                                 <ul class="list-unstyled flags">
-                                    <li><img src="img/cs_1.png" class="me-2"><a href="#">Business Registration</a></li>
-                                    <li><img src="img/cs_2.png" class="me-2"><a href="corporate-solutions.html">Corporate Solutions</a></li>
-                                    <li><img src="img/cs_3.png" class="me-2"><a href="#">Tax Advice</a></li>
+                                    <li><img src="img/l1_icon1.png" class="me-2"><a href="#">Setting US Office</a></li>
+                                    <li><img src="img/l1_icon2.png" class="me-2"><a href="#">Visa Processing</a></li>
+                                    <li><img src="img/l1_icon3.png" class="me-2"><a href="#">Intra Company Transfer</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <!-- Service Card 3 -->
+                    <!-- E2 Card -->
                     <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                        <div class="card service-card h-100">
-                            <img src="img/services_3.jpg" class="card-img-top" alt="Business Opportunities" />
+                        <div class="card relocate-card h-100">
+                            <img src="img/usa_c3.jpg" class="card-img-top" alt="E2" />
                             <div class="card-body">
-                                <h3 class="my-4">Business Opportunities</h3>
+                                <h3 class="my-4">E2</h3>
                                 <ul class="list-unstyled flags">
-                                    <li><img src="img/bo_1.png" class="me-2"><a href="franchises.html">Franchise</a></li>
-                                    <li><img src="img/bo_2.png" class="me-2"><a href="#">Property</a></li>
-                                    <li><img src="img/bo_3.png" class="me-2"><a href="#">Consultancy</a></li>
-                                    <li><img src="img/bo_4.png" class="me-2"><a href="#">Business Acquisitions</a></li>
+                                    <li><img src="img/e2_icon1.png" class="me-2"><a href="e2_visas.html">E2-Treaty Countries</a></li>
+                                    <li><img src="img/e2_icon2.png" class="me-2"><a href="e2_visas.html">Non-E2 Treaty Countries</a></li>
+                                    <li><img src="img/e2_icon3.png" class="me-2"><a href="e2_visas.html">FINO ANE2 Business</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- =================== RELOCATE TO THE USA =================== -->
-        <section class="py-5 bg-light" id="relocate-usa">
-            <div class="container">
-                <h3 class="tittle text-center mb-2 position-relative section-title-underline" data-aos="fade-up">Relocate to the USA</h3>
-                <div class="section-underline mx-auto mb-4"></div>
-                <div class="fetured-info">
-                    <p class="text-center" data-aos="fade-up">Global Citizenship Services is able to support every stage of your relocation to the United States. We pool our extensive immigration and corporate experience to help you build the strongest possible case for the US authorities, and stay by your side as you begin navigating the complex world of paying US taxes and setting up a business. Contact us to set up a free consultation.</p>
-                    <div class="row feature-grids text-center mt-5">
-                        <!-- EB5 Card -->
-                        <div class="col-lg-4 mb-4" data-aos="fade-up">
-                            <div class="card relocate-card h-100">
-                                <img src="img/usa_c1.jpg" class="card-img-top" alt="EB5" />
-                                <div class="card-body">
-                                    <h3 class="my-4">EB5</h3>
-                                    <ul class="list-unstyled flags">
-                                        <li><img src="img/flag_1.jpg" class="me-2"><a href="eb5-africa.html">EB5 Africa</a></li>
-                                        <li><img src="img/flag_2.jpg" class="me-2"><a href="eb5-india.html">EB5 India</a></li>
-                                        <li><img src="img/flag_3.jpg" class="me-2"><a href="eb5-russia.html">EB5 Russia</a></li>
-                                        <li><img src="img/flag_4.jpg" class="me-2"><a href="eb5-china.html">EB5 China</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- L1 Card -->
-                        <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                            <div class="card relocate-card h-100">
-                                <img src="img/usa_c2.jpg" class="card-img-top" alt="L1" />
-                                <div class="card-body">
-                                    <h3 class="my-4">L1</h3>
-                                    <ul class="list-unstyled flags">
-                                        <li><img src="img/l1_icon1.png" class="me-2"><a href="#">Setting US Office</a></li>
-                                        <li><img src="img/l1_icon2.png" class="me-2"><a href="#">Visa Processing</a></li>
-                                        <li><img src="img/l1_icon3.png" class="me-2"><a href="#">Intra Company Transfer</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- E2 Card -->
-                        <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                            <div class="card relocate-card h-100">
-                                <img src="img/usa_c3.jpg" class="card-img-top" alt="E2" />
-                                <div class="card-body">
-                                    <h3 class="my-4">E2</h3>
-                                    <ul class="list-unstyled flags">
-                                        <li><img src="img/e2_icon1.png" class="me-2"><a href="e2_visas.html">E2-Treaty Countries</a></li>
-                                        <li><img src="img/e2_icon2.png" class="me-2"><a href="e2_visas.html">Non-E2 Treaty Countries</a></li>
-                                        <li><img src="img/e2_icon3.png" class="me-2"><a href="e2_visas.html">FINO ANE2 Business</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+        </div>
+    </section>
+
+    <!-- =================== STATISTICS SECTION =================== -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 mb-4" data-aos="fade-up">
+                    <div class="stat-item">
+                        <h3 class="display-4 fw-bold">500+</h3>
+                        <p>Successful Applications</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-item">
+                        <h3 class="display-4 fw-bold">25+</h3>
+                        <p>Countries Covered</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-item">
+                        <h3 class="display-4 fw-bold">15+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-item">
+                        <h3 class="display-4 fw-bold">98%</h3>
+                        <p>Success Rate</p>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- =================== ABOUT US =================== -->
-        <section class="about py-5 about-bg" id="about">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 mb-4" data-aos="fade-right">
-                        <h3>About Us</h3>
-                        <p>Global Citizenship Services is the leading services provider for all your global relocation needs. Through our exclusive partnerships with some of the best immigration and corporate attorneys in the world, we are able to offer complete solutions for a range of global Citizenship by Investment programs, as well as EB-5 and E-2 investor visas to the United States. Our bespoke solutions are designed to make your move as effortless as possible, and include visa support, tax advice, corporate work, and help finding a business or property in your chosen destination.</p>
-                        <a href="about.html" class="btn btn-primary banner-know-more">Know More</a>
-                    </div>
-                    <div class="col-lg-6" data-aos="fade-left">
-                        <img src="img/about.jpg" class="img-fluid rounded" alt="About Us" />
-                    </div>
+        </div>
+    </section>
+
+    <!-- =================== ABOUT US =================== -->
+    <section class="about py-5 about-bg" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4" data-aos="fade-right">
+                    <h3>About Us</h3>
+                    <p>Global Citizenship Services is the leading services provider for all your global relocation needs. Through our exclusive partnerships with some of the best immigration and corporate attorneys in the world, we are able to offer complete solutions for a range of global Citizenship by Investment programs, as well as EB-5 and E-2 investor visas to the United States. Our bespoke solutions are designed to make your move as effortless as possible, and include visa support, tax advice, corporate work, and help finding a business or property in your chosen destination.</p>
+                    <a href="about.html" class="btn btn-primary banner-know-more">Know More</a>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <img src="img/about.jpg" class="img-fluid rounded" alt="About Us" />
                 </div>
             </div>
-        </section>
-        <!-- =================== ADDITIONAL SECTIONS CAN GO HERE =================== -->
-    </main>
+        </div>
+    </section>
+
+    <!-- =================== CTA SECTION =================== -->
+    <section class="py-5 bg-warning">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8" data-aos="fade-right">
+                    <h3 class="fw-bold mb-2">Ready to Start Your Global Citizenship Journey?</h3>
+                    <p class="mb-0">Get a free consultation with our experts today and explore your options.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end" data-aos="fade-left">
+                    <a href="contactus.html" class="btn btn-dark btn-lg">
+                        <i class="fas fa-phone me-2"></i>Get Free Consultation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- =================== FOOTER =================== -->
     <footer class="footer bg-dark text-white py-5">
         <div class="container">
             <div class="row footer-top">
                 <div class="col-lg-4 mb-4">
-                    <h5>Contact Us</h5>
-                    <p>Email: <a href="mailto:info@globalcitizenshipservices.com" class="text-white">info@globalcitizenshipservices.com</a></p>
-                    <p>Phone: <a href="tel:+1234567890" class="text-white">+1 234 567 890</a></p>
-                    <p>Address: 123 Main Street, City, Country</p>
+                    <h5><i class="fas fa-globe me-2"></i>Global Citizenship Services</h5>
+                    <p class="text-muted">Your trusted partner for international citizenship and residency solutions.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
-                <div class="col-lg-4 mb-4">
-                    <h5>Quick Links</h5>
+                <div class="col-lg-2 mb-4">
+                    <h6>Quick Links</h6>
                     <ul class="list-unstyled">
-                        <li><a href="index.html" class="text-white">Home</a></li>
-                        <li><a href="about.html" class="text-white">About Us</a></li>
-                        <li><a href="contactus.html" class="text-white">Contact Us</a></li>
-                        <li><a href="grenada.html" class="text-white">CBI Programmes</a></li>
-                        <li><a href="franchises.html" class="text-white">Business Opportunities</a></li>
+                        <li><a href="index.html" class="text-muted">Home</a></li>
+                        <li><a href="about.html" class="text-muted">About Us</a></li>
+                        <li><a href="contactus.html" class="text-muted">Contact Us</a></li>
+                        <li><a href="grenada.html" class="text-muted">CBI Programmes</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-4 mb-4">
-                    <h5>Follow Us</h5>
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a></li>
-                        <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-twitter"></i></a></li>
-                        <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a></li>
-                        <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-instagram"></i></a></li>
+                <div class="col-lg-3 mb-4">
+                    <h6>Services</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="grenada.html" class="text-muted">CBI Programmes</a></li>
+                        <li><a href="franchises.html" class="text-muted">Business Opportunities</a></li>
+                        <li><a href="eb5-africa.html" class="text-muted">EB5 Africa</a></li>
+                        <li><a href="eb5-india.html" class="text-muted">EB5 India</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h6>Contact Info</h6>
+                    <ul class="list-unstyled">
+                        <li class="text-muted"><i class="fas fa-phone me-2"></i>+1 (555) 123-4567</li>
+                        <li class="text-muted"><i class="fas fa-envelope me-2"></i>info@globalcitizenshipservices.com</li>
+                        <li class="text-muted"><i class="fas fa-map-marker-alt me-2"></i>123 International Blvd</li>
                     </ul>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12 text-center mt-3">
-                    <p class="mb-0">&copy; 2024 Global Citizenship Services. All Rights Reserved.</p>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 text-muted">&copy; 2024 Global Citizenship Services. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-muted me-3">Privacy Policy</a>
+                    <a href="#" class="text-muted">Terms of Service</a>
                 </div>
             </div>
         </div>
     </footer>
+
     <!-- =================== SCRIPTS =================== -->
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Owl Carousel JS -->
-    <script src="owlcarousel/owl.carousel.min.js"></script>
     <!-- AOS JS -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <!-- Custom JS: Carousel and AOS Init -->
+    <!-- Custom JS: AOS Init -->
     <script>
-        $(document).ready(function(){
-            $(".owl-carousel").owlCarousel({
-                items:1,
-                loop:true,
-                margin:10,
-                nav:true,
-                autoplay:true,
-                autoplayTimeout:4000,
-                autoplayHoverPause:true
-            });
-        });
         AOS.init({
             duration: 800,
             once: true
